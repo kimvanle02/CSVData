@@ -53,42 +53,80 @@ public class CSVData {
 	
 	/***
 	 * returns adjacent rows
-	 * @param rowIndexes 
-	 * @return
+	 * @param rowIndexes int array of indexes of rows to return
+	 * @return a 2d double array of the adjacent rows we're returning
 	 */
 	public double[][] getRows(int[] rowIndexes){
 		return null;
 	}
 	
+	/***
+	 * returns adjacent columns
+	 * @param startCol index of column to start returning from
+	 * @param endCol index of column to stop returning from
+	 * @return a 2d double array of the adjacent columns we're returning
+	 */
 	public double[][] getColumns(int startCol, int endCol){
 		return null;
 	}
 	
+	/***
+	 * returns adjacent columns
+	 * @param colIndexes int array of indexes of the columns to return
+	 * @return a 2nd double array of the adjacent columns we're returning
+	 */
 	public double[][] getColumns(int[] colIndexes){
 		return null;
 	}
 	
+	/***
+	 * returns adjacent columns
+	 * @param colNames String array of names of columns to return
+	 * @return a 2d double array of the adjacent columns we're returning
+	 */
 	public double[][] getColumns(String[] colNames){
 		return null;
 	}
 	
+	/***
+	 * sets a new value for an individual entry
+	 * @param rowIndex row in which individual entry is located
+	 * @param colIndex col in which individual entry is located
+	 * @param newValue new value that replaces the original value
+	 */
 	public void setValue(int rowIndex, int colIndex, double newValue){
 		
 	}
 	
+	/***
+	 * sets a new amount of rows 
+	 * @param row new amount of rows we want to set the original amount to
+	 */
 	public void setRow(int row){
 		
 	}
 	
+	/***
+	 * sets a new amount of columns
+	 * @param col new amount of columns we want to set the original amount to
+	 */
 	public void setCol(int col){
 		
 	}
 	
+	/***
+	 * returns a String array of the column names
+	 * @return a String array of column names
+	 */
 	public String[] getColumnNames(){
 		return null;
 	}
 	
 	
+	/***
+	 * saves the current state of the object back into a CSV file
+	 * @param filename name of file that CSV file will be saved into
+	 */
 	public void saveToFile(String filename){
 		
 	}
