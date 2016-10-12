@@ -23,19 +23,39 @@ public class CSVData {
 		return null;
 	}
 	
-
+	/***
+	 * returns a row
+	 * @param row index of the row to return
+	 * @return the row we're returning
+	 */
 	public double[] getRow(int row){
 		return null;
 	}
 	
+	/***
+	 * returns a column
+	 * @param name name of the column to return
+	 * @return the column we're returning
+	 */
 	public double[] getColumn(String name){
 		return null;
 	}
 	
+	/***
+	 * returns adjacent rows
+	 * @param startRow index of row to start returning from
+	 * @param endRow index of row to stop returning from
+	 * @return a 2d double array of the adjacent rows we're returning
+	 */
 	public double[][] getRows(int startRow, int endRow){
 		return null;
 	}
 	
+	/***
+	 * returns adjacent rows
+	 * @param rowIndexes 
+	 * @return
+	 */
 	public double[][] getRows(int[] rowIndexes){
 		return null;
 	}
