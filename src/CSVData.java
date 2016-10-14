@@ -109,7 +109,14 @@ public class CSVData {
 	 * @return a 2d double array of the adjacent rows we're returning
 	 */
 	public double[][] getRows(int startRow, int endRow) {
-		return null;
+		double[][] dataRows = new double[endRow-startRow+1][data[0].length];
+		for (int row = startRow; row < endRow+1; row++){
+			double[] singleRow = getRow(row);
+			for (int i = 0; i < singleRow.length; i++){
+				dataRows[row][i] = singleRow[i];
+			}
+		}
+		return dataRows;
 	}
 
 	/***
